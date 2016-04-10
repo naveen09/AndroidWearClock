@@ -1,0 +1,182 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #396D78;
+}
+.rocket {
+    background-image: url('../images/rocket.png');
+    background-size: cover;
+    height: 50px;
+    left: 0;
+    margin: -50px auto auto;
+    right: 0;
+    width: 50px;
+    z-index: 999;
+    transform: rotate(0deg) translateX(170px);
+    -webkit-animation: orbit 60s linear infinite;
+    -moz-animation: orbit 60s linear infinite;
+    -o-animation: orbit 60s linear infinite;
+    animation: orbit 60s linear infinite;
+}
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(170px);
+    }
+    to {
+        transform: rotate(360deg) translateX(170px);
+    }
+}
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg) translateX(170px);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translateX(170px);
+    }
+}
+@-moz-keyframes orbit {
+    from {
+        -moz-transform: rotate(0deg) translateX(170px);
+    }
+    to {
+        -moz-transform: rotate(360deg) translateX(170px);
+    }
+}
+@-o-keyframes orbit {
+    from {
+        -o-transform: rotate(0deg) translateX(170px);
+    }
+    to {
+        -o-transform: rotate(360deg) translateX(170px);
+    }
+}
+
+.month {
+    font-size: 1.5em;
+}
+.time {
+    display: inline-block;
+    margin-top: 25%;
+    margin-left: 20px;
+}
+.time .hr {
+    font-size: 3em;
+    font-weight: bold;
+    word-spacing: -10px;
+}
+.time .min {
+    font-size: 3em;
+    font-weight: normal;
+    font-family: 'Open Sans Condensed', sans-serif;
+    word-spacing: -5px;
+}
+.ampm {
+    font-size: 1rem;
+}
+.main{
+	background-image: url('../images/bg.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	height: 700px;
+	width: 700px;
+	margin: auto;
+}
+.moon {
+	margin-top: 20px;
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 4em auto;
+    left: 0;
+    right: 0;
+    background: #888 url('../images/moon.png') 0 0 repeat;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-size: 630px;
+    animation: rotate 4s linear infinite;
+    -webkit-animation: rotate 60s linear infinite;
+    -moz-animation: rotate 60s linear infinite;
+    -ms-animation: rotate 60s linear infinite;
+    -o-animation: rotate 60s linear infinite;
+    -webkit-transition: -webkit-transform 200ms linear;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: -moz-transform 200ms linear;
+    -moz-transform-style: preserve-3d;
+    transition: transform 200ms linear;
+    transform-style: preserve-3d;
+}
+.moon:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: -30px 1px 10px rgba(162, 205, 178, 0.7) inset;
+    -moz-box-shadow: -30px 1px 10px rgba(162, 205, 178, 0.7) inset;
+    -webkit-box-shadow: -30px 1px 10px rgba(162, 205, 178, 0.7) inset;
+    z-index: 2;
+}
+.moon:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+@keyframes rotate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 630px 0;
+    }
+}
+@-moz-keyframes rotate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 630px 0;
+    }
+}
+@-webkit-keyframes rotate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 630px 0;
+    }
+}
+@-ms-keyframes rotate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 630px 0;
+    }
+}
+@-o-keyframes rotate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 630px 0;
+    }
+}

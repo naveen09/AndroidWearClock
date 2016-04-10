@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js" type="text/javascript">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js" type="text/javascript">
+        </script>
+        <script src="js/app.js" type="text/javascript">
+        </script>
+    </head>
+</html>
+<body ng-app="motowatch">
+    <div class="main">
+        <div class="moon" ng-controller="watchCtrl as vm">
+            <div class="time">
+                <span class="hr">
+                    {{vm.hr}}
+                </span>
+                <span class="min">
+                    {{vm.min}}
+                </span>
+                <span class="ampm">
+                    {{vm.sec}} {{vm.ampm}}
+                </span>
+            </div>
+            <div class="month">
+                {{vm.month}}
+                <b>
+                    {{vm.date}}
+                </b>
+            </div>
+            <div class="rocket">
+            </div>
+        </div>
+    </div>
+</body>
